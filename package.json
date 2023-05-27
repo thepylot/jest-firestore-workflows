@@ -1,0 +1,21 @@
+{
+  "name": "jest-firestore-workflows",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app",
+    "test": "jest"
+   },
+  "author": "Developer Timeline",
+  "license": "ISC",
+  "dependencies": {
+      "express": "^4.17.1",
+      "firebase-admin": "^10.0.0"
+    },
+  "devDependencies": {
+      "jest": "^29.0.0",
+      "supertest": "^6.2.4",
+      "@faker-js/faker": "^7.5.0"
+  }
+}
