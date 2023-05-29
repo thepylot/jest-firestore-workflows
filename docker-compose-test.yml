@@ -1,0 +1,9 @@
+version: "3.2"
+services:
+  firestore_emulator:
+    image: mtlynch/firestore-emulator
+    environment:
+      - FIRESTORE_PROJECT_ID=my-blog-test
+      - PORT=8080
+    ports:
+      - 8080:8080
