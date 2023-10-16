@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app",
-    "lint": "eslint ."
+    "start": "node app"
   },
   "author": "Developer Timeline",
   "license": "ISC",
