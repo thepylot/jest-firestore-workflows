@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app",
-    "lint": "eslint . --fix",
+    "lint": "eslint .",
     "test": "jest"
   },
   "author": "Developer Timeline",
