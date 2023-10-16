@@ -23,6 +23,6 @@ else {
     });
 }
 
-const db = firebaseAdmin.firestore();
+const db = firebaseAdmin.firestore()
 
 module.exports = { db: db };
