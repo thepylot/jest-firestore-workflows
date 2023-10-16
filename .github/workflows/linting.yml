@@ -6,7 +6,7 @@ on:
       - youtube
 
 jobs:
-  linting:
+  linting-checks:
     name: Linting
     runs-on: ubuntu-latest
 

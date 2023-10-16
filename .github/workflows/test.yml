@@ -10,8 +10,7 @@ jobs:
     name: Running Tests
     timeout-minutes: 10
     runs-on: ubuntu-latest
-    needs:
-      - linting
+    needs: linting-checks
 
     steps:
     - name: Checkout
