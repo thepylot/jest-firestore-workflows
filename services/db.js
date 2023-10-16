@@ -1,11 +1,11 @@
-const firebaseAdmin =  require("firebase-admin")
+const firebaseAdmin =  require("firebase-admin");
 const stateDetails = require("../utils/state-details");
 
 const firebaseCredentials = stateDetails.isProduction()
     && Object.assign(
         { private_key: String(process.env.FIREBASE_PRIVATE_KEY).replace(/\\n/g, "\n") },
         require("../creds/firebase-admin-prod.json")
-    )
+    );
 
 if (firebaseAdmin.apps.length > 0) {
     firebaseAdmin.app();

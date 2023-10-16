@@ -7,7 +7,7 @@ module.exports = {
     },
     getDbUrl: () => {
         if (process.env.FIRESTORE_EMULATOR_HOST) {
-            return process.env.FIRESTORE_EMULATOR_HOST
+            return process.env.FIRESTORE_EMULATOR_HOST;
         } else {
             return process.env.stage === "prod"
             ? "https://{PROJECT_NAME_DEV}.firebaseio.com"

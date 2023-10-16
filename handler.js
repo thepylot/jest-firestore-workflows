@@ -1,6 +1,6 @@
 const express = require("express");
 const { getPosts } = require("./services/posts");
-var handler = express()
+var handler = express();
 
 handler.get("/posts", async (req, res) => {
     const posts = await getPosts();
@@ -12,4 +12,4 @@ handler.get("/posts", async (req, res) => {
 
 module.exports = {
     handler: handler
-}
+};
