@@ -6,11 +6,13 @@ on:
       - youtube
 
 jobs:
+  linting:
+    uses: ./.github/workflows/linting.yml
   tests:
     name: Running Tests
     timeout-minutes: 10
     runs-on: ubuntu-latest
-    needs: linting-checks
+    needs: [linting]
 
     steps:
     - name: Checkout
