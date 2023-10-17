@@ -1,9 +1,7 @@
 name: Lint
 
 on:
-  push:
-    branches:
-      - youtube
+  workflow_call:
 
 jobs:
   linting-checks:
